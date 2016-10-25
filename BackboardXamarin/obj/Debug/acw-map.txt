@@ -46,6 +46,14 @@ BackboardXamarin.ConstrainedFragment, BackboardXamarin;md5ceae6f631bbeca7a6c054d
 BackboardXamarin.ConstrainedFragment, BackboardXamarin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5ceae6f631bbeca7a6c054daa68d99067.ConstrainedFragment
 BackboardXamarin.ConstrainedFragment;md5ceae6f631bbeca7a6c054daa68d99067.ConstrainedFragment
 backboardxamarin.ConstrainedFragment;md5ceae6f631bbeca7a6c054daa68d99067.ConstrainedFragment
+Com.Facebook.Rebound.ISpringListenerImplementor, ReboundDroid;mono.com.facebook.rebound.SpringListenerImplementor
+Com.Facebook.Rebound.ISpringListenerImplementor, ReboundDroid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.facebook.rebound.SpringListenerImplementor
+Com.Facebook.Rebound.ISpringListenerImplementor;mono.com.facebook.rebound.SpringListenerImplementor
+mono.com.facebook.rebound.SpringListenerImplementor;mono.com.facebook.rebound.SpringListenerImplementor
+Com.Facebook.Rebound.ISpringSystemListenerImplementor, ReboundDroid;mono.com.facebook.rebound.SpringSystemListenerImplementor
+Com.Facebook.Rebound.ISpringSystemListenerImplementor, ReboundDroid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.facebook.rebound.SpringSystemListenerImplementor
+Com.Facebook.Rebound.ISpringSystemListenerImplementor;mono.com.facebook.rebound.SpringSystemListenerImplementor
+mono.com.facebook.rebound.SpringSystemListenerImplementor;mono.com.facebook.rebound.SpringSystemListenerImplementor
 com.tumblr.backboard.Imitator, BackboardLib;md5fa618897ede079c6dae2f5e8b96853b1.Imitator
 com.tumblr.backboard.Imitator, BackboardLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5fa618897ede079c6dae2f5e8b96853b1.Imitator
 com.tumblr.backboard.Imitator;md5fa618897ede079c6dae2f5e8b96853b1.Imitator
@@ -86,11 +94,3 @@ com.tumblr.backboard.MotionListener, BackboardLib;md5fa618897ede079c6dae2f5e8b96
 com.tumblr.backboard.MotionListener, BackboardLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5fa618897ede079c6dae2f5e8b96853b1.MotionListener
 com.tumblr.backboard.MotionListener;md5fa618897ede079c6dae2f5e8b96853b1.MotionListener
 com.tumblr.backboard.MotionListener;md5fa618897ede079c6dae2f5e8b96853b1.MotionListener
-Com.Facebook.Rebound.ISpringListenerImplementor, ReboundDroid;mono.com.facebook.rebound.SpringListenerImplementor
-Com.Facebook.Rebound.ISpringListenerImplementor, ReboundDroid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.facebook.rebound.SpringListenerImplementor
-Com.Facebook.Rebound.ISpringListenerImplementor;mono.com.facebook.rebound.SpringListenerImplementor
-mono.com.facebook.rebound.SpringListenerImplementor;mono.com.facebook.rebound.SpringListenerImplementor
-Com.Facebook.Rebound.ISpringSystemListenerImplementor, ReboundDroid;mono.com.facebook.rebound.SpringSystemListenerImplementor
-Com.Facebook.Rebound.ISpringSystemListenerImplementor, ReboundDroid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.facebook.rebound.SpringSystemListenerImplementor
-Com.Facebook.Rebound.ISpringSystemListenerImplementor;mono.com.facebook.rebound.SpringSystemListenerImplementor
-mono.com.facebook.rebound.SpringSystemListenerImplementor;mono.com.facebook.rebound.SpringSystemListenerImplementor

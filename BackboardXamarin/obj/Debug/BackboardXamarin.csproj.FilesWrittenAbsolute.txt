@@ -30,10 +30,11 @@
 /Users/ulinmac/Projects/BackboardXamarin/BackboardXamarin/obj/Debug/res/values/colors.xml
 /Users/ulinmac/Projects/BackboardXamarin/BackboardXamarin/obj/Debug/res/values/dimens.xml
 /Users/ulinmac/Projects/BackboardXamarin/BackboardXamarin/obj/Debug/res/values/styles.xml
-/Users/ulinmac/Projects/BackboardXamarin/BackboardXamarin/obj/Debug/res/drawable/grid.png
-/Users/ulinmac/Projects/BackboardXamarin/BackboardXamarin/obj/Debug/res/drawable/selected_photo.png
+/Users/ulinmac/Projects/BackboardXamarin/BackboardXamarin/obj/Debug/res/drawable-xhdpi/grid.png
+/Users/ulinmac/Projects/BackboardXamarin/BackboardXamarin/obj/Debug/res/drawable-xhdpi/selected_photo.png
 /Users/ulinmac/Projects/BackboardXamarin/BackboardXamarin/obj/Debug/res/layout/origami_example.xml
 /Users/ulinmac/Projects/BackboardXamarin/BackboardXamarin/obj/Debug/res/drawable/feedback.png
+/Users/ulinmac/Projects/BackboardXamarin/BackboardXamarin/obj/Debug/res/drawable-xhdpi/feedback.png
 /Users/ulinmac/Projects/BackboardXamarin/BackboardXamarin/obj/Debug/R.cs.flag
 /Users/ulinmac/Projects/BackboardXamarin/BackboardXamarin/bin/Debug/com.companyname.backboardxamarin-Signed.apk
 /Users/ulinmac/Projects/BackboardXamarin/BackboardXamarin/obj/Debug/uploadflags.txt

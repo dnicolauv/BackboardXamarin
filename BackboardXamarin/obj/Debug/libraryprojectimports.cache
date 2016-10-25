@@ -2,13 +2,13 @@
 <Paths>
   <Jars></Jars>
   <ResolvedResourceDirectories>
-    <ResolvedResourceDirectory>E:\dnvXam\BackboardXamarin\BackboardXamarin\obj\Debug\__library_projects__\BackboardLib\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>/Users/ulinmac/Projects/BackboardXamarin/BackboardXamarin/obj/Debug/__library_projects__/BackboardLib/library_project_imports/res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
-    <ResolvedAssetDirectory>obj\Debug\__library_projects__\BackboardLib\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj/Debug/__library_projects__/BackboardLib/library_project_imports/assets</ResolvedAssetDirectory>
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
-    <ResolvedResourceDirectoryStamp>E:\dnvXam\BackboardXamarin\BackboardXamarin\obj\Debug\__library_projects__\BackboardLib.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>/Users/ulinmac/Projects/BackboardXamarin/BackboardXamarin/obj/Debug/__library_projects__/BackboardLib.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>
