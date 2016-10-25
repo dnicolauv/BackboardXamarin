@@ -97,45 +97,47 @@ namespace BackboardXamarin
 							.Commit();
 					SetTitle(Resource.String.action_constrained);
 					return true;
-					/*
-					
-				case Resource.Id.action_explosion:
-					FragmentManager.BeginTransaction()
-							.Replace(Resource.Id.container, new ExplosionFragment())
-							.Commit();
-					SetTitle(Resource.String.action_explosion);
-					return true;
 
-				case Resource.Id.action_follow:
-					FragmentManager.BeginTransaction()
-							.Replace(Resource.Id.container, new FollowFragment())
-							.Commit();
-					SetTitle(Resource.String.action_follow);
-					return true;
+                case Resource.Id.action_follow:
+                    FragmentManager.BeginTransaction()
+                            .Replace(Resource.Id.container, new FollowFragment())
+                            .Commit();
+                    SetTitle(Resource.String.action_follow);
+                    return true;
+                /*
 
-				case Resource.Id.action_zoom:
-					FragmentManager.BeginTransaction()
-							.Replace(Resource.Id.container, new ZoomFragment())
-							.Commit();
-					SetTitle(Resource.String.action_zoom);
-					return true;
+            case Resource.Id.action_explosion:
+                FragmentManager.BeginTransaction()
+                        .Replace(Resource.Id.container, new ExplosionFragment())
+                        .Commit();
+                SetTitle(Resource.String.action_explosion);
+                return true;
 
-				case Resource.Id.action_constrained:
-					FragmentManager.BeginTransaction()
-							.Replace(R.Id.container, new ConstrainedFragment())
-							.Commit();
-					SetTitle(Resource.String.action_constrained);
-					return true;
 
-				case Resource.Id.action_press:
-					FragmentManager.BeginTransaction()
-							.Replace(Resource.Id.container, new PressFragment())
-							.Commit();
-					SetTitle(Resource.String.action_press);
-					return true;
-					*/
 
-					case Resource.Id.action_origami:
+            case Resource.Id.action_zoom:
+                FragmentManager.BeginTransaction()
+                        .Replace(Resource.Id.container, new ZoomFragment())
+                        .Commit();
+                SetTitle(Resource.String.action_zoom);
+                return true;
+
+            case Resource.Id.action_constrained:
+                FragmentManager.BeginTransaction()
+                        .Replace(R.Id.container, new ConstrainedFragment())
+                        .Commit();
+                SetTitle(Resource.String.action_constrained);
+                return true;
+
+            case Resource.Id.action_press:
+                FragmentManager.BeginTransaction()
+                        .Replace(Resource.Id.container, new PressFragment())
+                        .Commit();
+                SetTitle(Resource.String.action_press);
+                return true;
+                */
+
+                case Resource.Id.action_origami:
 					FragmentManager.BeginTransaction()
 					.Replace(Resource.Id.container, new OrigamiFragment())
 							.Commit();

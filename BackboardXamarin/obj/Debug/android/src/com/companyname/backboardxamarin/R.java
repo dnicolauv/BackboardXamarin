@@ -36,19 +36,19 @@ public final class R {
         public static final int selected_photo=0x7f020009;
     }
     public static final class id {
-        public static final int action_1=0x7f0a001a;
-        public static final int action_appear=0x7f0a0013;
-        public static final int action_bloom=0x7f0a0011;
-        public static final int action_constrained=0x7f0a0017;
-        public static final int action_explosion=0x7f0a0014;
-        public static final int action_flower=0x7f0a0012;
-        public static final int action_follow=0x7f0a0015;
-        public static final int action_move=0x7f0a000e;
-        public static final int action_origami=0x7f0a0019;
-        public static final int action_press=0x7f0a0018;
-        public static final int action_scale=0x7f0a0010;
-        public static final int action_snap=0x7f0a000f;
-        public static final int action_zoom=0x7f0a0016;
+        public static final int action_1=0x7f0a0018;
+        public static final int action_appear=0x7f0a0011;
+        public static final int action_bloom=0x7f0a000f;
+        public static final int action_constrained=0x7f0a0015;
+        public static final int action_explosion=0x7f0a0012;
+        public static final int action_flower=0x7f0a0010;
+        public static final int action_follow=0x7f0a0013;
+        public static final int action_move=0x7f0a000c;
+        public static final int action_origami=0x7f0a0017;
+        public static final int action_press=0x7f0a0016;
+        public static final int action_scale=0x7f0a000e;
+        public static final int action_snap=0x7f0a000d;
+        public static final int action_zoom=0x7f0a0014;
         public static final int circle=0x7f0a0008;
         public static final int circle0=0x7f0a0001;
         public static final int circle1=0x7f0a0002;
@@ -58,11 +58,9 @@ public final class R {
         public static final int circle5=0x7f0a0006;
         public static final int constraint=0x7f0a0007;
         public static final int container=0x7f0a0000;
-        public static final int feedback=0x7f0a000c;
         public static final int grid=0x7f0a000a;
         public static final int rect=0x7f0a0009;
         public static final int selection=0x7f0a000b;
-        public static final int spring_configurator=0x7f0a000d;
     }
     public static final class layout {
         public static final int activity_backboard=0x7f040000;

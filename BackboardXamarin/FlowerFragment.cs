@@ -85,7 +85,6 @@ namespace BackboardXamarin
 					// follow finger
 					base.Mime(offset, value, delta, dt, ev);
 				}
-
 			}
 		}
 

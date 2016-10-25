@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -48,6 +48,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BackboardActivity.cs" />
+    <Compile Include="FollowFragment.cs" />
+    <Compile Include="OrigamiFragment.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MoveFragment.cs" />
@@ -57,7 +59,6 @@
     <Compile Include="FlowerFragment.cs" />
     <Compile Include="AppearFragment.cs" />
     <Compile Include="ConstrainedFragment.cs" />
-    <Compile Include="OrigamiFragment.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -92,15 +93,12 @@
     <AndroidResource Include="Resources\values\colors.xml" />
     <AndroidResource Include="Resources\values\dimens.xml" />
     <AndroidResource Include="Resources\values\styles.xml" />
-    <AndroidResource Include="Resources\drawable\grid.png" />
-    <AndroidResource Include="Resources\drawable\selected_photo.png" />
-    <AndroidResource Include="Resources\layout\origami_example.xml" />
+    <AndroidResource Include="Resources\drawable-xhdpi\grid.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\selected_photo.png" />
+    <AndroidResource Include="Resources\layout\origami_example.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
     <AndroidResource Include="Resources\drawable\feedback.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\drawable\" />
-    <Folder Include="Resources\layout\" />
-    <Folder Include="Resources\menu\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\BackboardLib\BackboardLib\BackboardLib.csproj">

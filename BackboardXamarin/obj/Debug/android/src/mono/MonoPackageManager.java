@@ -99,10 +99,10 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "BackboardXamarin.dll" comes first in this list. */
 		"BackboardXamarin.dll",
-		"System.Runtime.dll",
-		"ReboundDroid.dll",
 		"BackboardLib.dll",
+		"ReboundDroid.dll",
 		"System.Threading.dll",
+		"System.Runtime.dll",
 		"System.Collections.dll",
 		"System.Collections.Concurrent.dll",
 		"System.Diagnostics.Debug.dll",

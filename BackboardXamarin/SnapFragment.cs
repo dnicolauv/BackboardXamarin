@@ -41,7 +41,6 @@ namespace BackboardXamarin
 				// snap to left or right depending on current location
 				if (motionImitator.mSpring.CurrentValue  > rootView.MeasuredWidth / 2 - circle.MeasuredWidth / 2)
 				{
-
 					motionImitator.mSpring.SetEndValue(rootView.MeasuredWidth - circle.MeasuredWidth);
 				}
 				else {

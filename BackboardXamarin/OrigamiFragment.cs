@@ -25,7 +25,6 @@ namespace BackboardXamarin
 		  private View mSelectedPhoto;
 		  private View mPhotoGrid;
 		  private View mFeedbackBar;
-		  private SpringConfiguratorView mSpringConfiguratorView;
 
 		public override void OnCreate(Bundle savedInstanceState)
 		{
@@ -43,34 +42,27 @@ namespace BackboardXamarin
 
 			View rootView = inflater.Inflate(Resource.Layout.origami_example, container, false);
 
-
-			var sys = SpringSystem.Create();
-			mSpring = sys.CreateSpring();
-			mSpring.SetSpringConfig(ORIGAMI_SPRING_CONFIG);
-
-			var a = new Actor.Builder(sys, mSelectedPhoto).AddTranslateMotion(MotionProperty.X).AddTranslateMotion(MotionProperty.Y).Build();
-
-			rootView.Touch += (sender, e) =>
-			{
-				if (mSpring.EndValue == 0)
-				{
-					mSpring.SetEndValue(1);
-				}
-				else {
-					mSpring.SetEndValue(0);
-				}
-			};
-
 			mPhotoGrid = rootView.FindViewById<View>(Resource.Id.grid);
 			mSelectedPhoto = rootView.FindViewById<View>(Resource.Id.selection);
-			mFeedbackBar = rootView.FindViewById<View>(Resource.Id.feedback);
-			mSpringConfiguratorView = rootView.FindViewById<SpringConfiguratorView>(Resource.Id.spring_configurator);
+            //mFeedbackBar = rootView.FindViewById<View>(Resource.Id.feedback);
 
-			mSelectedPhoto.SetOnTouchListener(new ToggleImitator(mSpring, 0.5, 10.5));
+            SpringSystem springSystem = SpringSystem.Create();
+            mSpring = springSystem.CreateSpring().SetSpringConfig(ORIGAMI_SPRING_CONFIG);
 
+            mSpring.AddListener(new MapPerformer(mSelectedPhoto, View.ScaleXs, 0f, 1f, 0.33f, 1));
+            mSpring.AddListener(new MapPerformer(mSelectedPhoto, View.ScaleYs, 0f, 1f, 0.33f, 1));
+            mSpring.AddListener(new MapPerformer(mSelectedPhoto, ViewHelper.GetViewStaticProperty(mSelectedPhoto, "TranslationX"), 0, 1, Util.DpToPx(-106.667f, Resources), 0));
+            mSpring.AddListener(new MapPerformer(mSelectedPhoto, ViewHelper.GetViewStaticProperty(mSelectedPhoto, "TranslationY"), 0, 1, Util.DpToPx(46.667f, Resources), 0));
+            mSpring.AddListener(new MapPerformer(mPhotoGrid, ViewHelper.GetViewStaticProperty(mPhotoGrid, "Alpha"), 0, 1, 1, 0));
+            mSpring.AddListener(new MapPerformer(mPhotoGrid, View.ScaleXs, 0f, 1f, 1f, 0.95f));
+            mSpring.AddListener(new MapPerformer(mPhotoGrid, View.ScaleYs, 0f, 1f, 1f, 0.95f));
 
+            ToggleImitator imitator = new ToggleImitator(mSpring, 0, 1);
+            rootView.SetOnTouchListener(imitator);
 
-			return rootView;
+            mSpring.SetCurrentValue(0);
+
+            return rootView;
 		}
 	}
 }
