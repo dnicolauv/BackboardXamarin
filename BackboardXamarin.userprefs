@@ -1,17 +1,11 @@
 ﻿<Properties StartupConfiguration="{D1D3B1CF-40AC-4577-8BD2-FE3815E59AD6}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BackboardXamarin Status">
-    <Files>
-      <File FileName="BackboardXamarin/FollowFragment.cs" Line="111" Column="50" />
-      <File FileName="../BackboardLib/BackboardLib/ViewHelper.cs" Line="27" Column="4" />
-      <File FileName="BackboardLib Status" />
-      <File FileName="BackboardXamarin Status" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BackboardXamarin" expanded="True">
-            <Node name="BackboardLib" expanded="True" />
-            <Node name="BackboardXamarin" expanded="True" selected="True" />
+            <Node name="BackboardLib" expanded="True" selected="True" />
+            <Node name="BackboardXamarin" expanded="True" />
           </Node>
         </State>
       </Pad>
