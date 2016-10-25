@@ -111,7 +111,7 @@ namespace BackboardXamarin
 			{
 				springs[i] = springSystem.CreateSpring();
 
-				springs[i].AddListener(new Performer(mCircles[i], View.GetViewStaticProperty("TranslationY")));
+				springs[i].AddListener(new Performer(mCircles[i], ViewHelper.TranslationY));
 
 				mCircles[i].Tag = springs[i];
 

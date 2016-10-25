@@ -99,6 +99,7 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\feedback.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\feedback.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\BackboardLib\BackboardLib\BackboardLib.csproj">

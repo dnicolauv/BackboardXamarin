@@ -86,9 +86,9 @@ namespace BackboardXamarin
 				View view = mCircles[i];
 
 				// map spring to a line segment from the center to the edge of the ring
-				spring.AddListener(new MapPerformer(view, View.GetViewStaticProperty("TranslationX"), 0, 1,	0, (float)(RING_DIAMETER * Math.Cos(i * arc))));
+				spring.AddListener(new MapPerformer(view, ViewHelper.TranslationX, 0, 1,	0, (float)(RING_DIAMETER * Math.Cos(i * arc))));
 
-				spring.AddListener(new MapPerformer(view, View.GetViewStaticProperty("TranslationY"), 0, 1, 0, (float)(RING_DIAMETER * Math.Sin(i * arc))));
+				spring.AddListener(new MapPerformer(view, ViewHelper.TranslationY, 0, 1, 0, (float)(RING_DIAMETER * Math.Sin(i * arc))));
 
 				spring.SetEndValue(CLOSED);
 			}

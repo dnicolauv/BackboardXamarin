@@ -147,9 +147,9 @@ namespace BackboardXamarin
 				View view = mCircles[i];
 
 				// map spring to a line segment from the center to the edge of the ring
-				spring.AddListener(new MapPerformer(view, View.GetViewStaticProperty("TranslationX"), 0, 1,	0, (float)(RING_DIAMETER * Math.Cos(i * arc))));
+				spring.AddListener(new MapPerformer(view, ViewHelper.TranslationX, 0, 1,	0, (float)(RING_DIAMETER * Math.Cos(i * arc))));
 
-				spring.AddListener(new MapPerformer(view, View.GetViewStaticProperty("TranslationY"), 0, 1,	0, (float)(RING_DIAMETER * Math.Sin(i * arc))));
+				spring.AddListener(new MapPerformer(view, ViewHelper.TranslationY, 0, 1,	0, (float)(RING_DIAMETER * Math.Sin(i * arc))));
 
 				spring.SetEndValue(CLOSED);
 			}
@@ -159,8 +159,8 @@ namespace BackboardXamarin
 
 			// move circle using finger, snap when near another circle, and bloom when touched
 			new Actor.Builder(SpringSystem.Create(), mCircle)
-			         .AddMotion(new SnapImitator(MotionProperty.X), View.GetViewStaticProperty("TranslationX"))
-					 .AddMotion(new SnapImitator(MotionProperty.Y), View.GetViewStaticProperty("TranslationY"))
+			         .AddMotion(new SnapImitator(MotionProperty.X), ViewHelper.TranslationX)
+					 .AddMotion(new SnapImitator(MotionProperty.Y), ViewHelper.TranslationY)
 					 .OnTouchListener(imitator)
 					 .Build();
 

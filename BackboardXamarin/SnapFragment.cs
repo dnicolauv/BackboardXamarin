@@ -51,7 +51,7 @@ namespace BackboardXamarin
 
 			new Actor.Builder(SpringSystem.Create(), circle)
 					.AddTranslateMotion(MotionProperty.Y)
-			         .AddMotion(motionImitator, View.GetViewStaticProperty("TranslationX"))
+			         .AddMotion(motionImitator, ViewHelper.TranslationX)
 			         .Build();
 
 			return rootView;

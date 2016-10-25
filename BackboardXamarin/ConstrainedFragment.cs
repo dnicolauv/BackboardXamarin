@@ -39,8 +39,8 @@ namespace BackboardXamarin
 			InertialImitator motionImitatorY = new InertialImitator(MotionProperty.Y, Imitator.TRACK_DELTA,	Imitator.FOLLOW_SPRING, 0, 0);
 
 			new Actor.Builder(SpringSystem.Create(), circle)
-			         .AddMotion(motionImitatorX, View.GetViewStaticProperty("TranslationX"))
-			         .AddMotion(motionImitatorY, View.GetViewStaticProperty("TranslationY"))
+			         .AddMotion(motionImitatorX, ViewHelper.TranslationX)
+			         .AddMotion(motionImitatorY, ViewHelper.TranslationY)
 					 .Build();
 
 			EventHandler globalHandler = null;
