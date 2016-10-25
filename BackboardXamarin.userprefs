@@ -1,0 +1,44 @@
+﻿<Properties StartupConfiguration="{D1D3B1CF-40AC-4577-8BD2-FE3815E59AD6}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BackboardXamarin/OrigamiFragment.cs">
+    <Files>
+      <File FileName="BackboardXamarin/OrigamiFragment.cs" Line="69" Column="4" />
+      <File FileName="BackboardXamarin/ScaleFragment.cs" Line="40" Column="1" />
+      <File FileName="BackboardXamarin/SnapFragment.cs" Line="1" Column="1" />
+      <File FileName="../BackboardLib/BackboardLib/Actor.cs" Line="124" Column="1" />
+      <File FileName="../BackboardLib/BackboardLib/EventImitator.cs" Line="30" Column="1" />
+      <File FileName="../BackboardLib/BackboardLib/Imitator.cs" Line="12" Column="24" />
+      <File FileName="../BackboardLib/BackboardLib/InertialImitator.cs" Line="44" Column="6" />
+      <File FileName="../BackboardLib/BackboardLib/MapPerformer.cs" Line="1" Column="1" />
+      <File FileName="../BackboardLib/BackboardLib/Performer.cs" Line="1" Column="1" />
+      <File FileName="../BackboardLib/BackboardLib/SpringImitator.cs" Line="1" Column="1" />
+      <File FileName="../BackboardLib/BackboardLib/ToggleImitator.cs" Line="1" Column="1" />
+      <File FileName="../BackboardLib/BackboardLib/ViewHelper.cs" Line="1" Column="1" />
+      <File FileName="BackboardXamarin/AppearFragment.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BackboardXamarin" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.BackboardXamarin AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Nexus 7 (Marshmallow) API23" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint enabled="false" file="/Users/ulinmac/Projects/BackboardLib/BackboardLib/ConstrainedMotionImitator.cs" line="63" column="1" />
+      <Breakpoint enabled="false" file="/Users/ulinmac/Projects/BackboardLib/BackboardLib/ConstrainedMotionImitator.cs" line="55" column="1" />
+      <Breakpoint enabled="false" file="/Users/ulinmac/Projects/BackboardLib/BackboardLib/ConstrainedMotionImitator.cs" line="34" column="1" />
+      <Breakpoint enabled="false" file="/Users/ulinmac/Projects/BackboardLib/BackboardLib/MotionImitator.cs" line="42" column="1" />
+      <Breakpoint enabled="false" file="/Users/ulinmac/Projects/BackboardLib/BackboardLib/MotionImitator.cs" line="60" column="1" />
+      <Breakpoint enabled="false" file="/Users/ulinmac/Projects/BackboardLib/BackboardLib/MotionImitator.cs" line="76" column="1" />
+      <Breakpoint enabled="false" file="/Users/ulinmac/Projects/BackboardLib/BackboardLib/MotionImitator.cs" line="93" column="1" />
+      <Breakpoint enabled="false" file="/Users/ulinmac/Projects/BackboardLib/BackboardLib/MotionImitator.cs" line="114" column="1" />
+      <Breakpoint enabled="false" file="/Users/ulinmac/Projects/BackboardLib/BackboardLib/MotionImitator.cs" line="134" column="1" />
+      <Breakpoint enabled="false" file="/Users/ulinmac/Projects/BackboardLib/BackboardLib/EventImitator.cs" line="30" column="1" />
+      <Breakpoint enabled="false" file="/Users/ulinmac/Projects/BackboardLib/BackboardLib/EventImitator.cs" line="46" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
