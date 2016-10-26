@@ -1,4 +1,4 @@
-# BackboardXamarin
+# Xamarin Backboard and Rebound Samples
 Manual port to .NET (Xamarin Android) of Tumblr Backboard lib and Facebook Rebound lib samples using the also manually ported to c# Backboard lib:
 https://github.com/ulin666/BackboardLib
 (Depends on it to work)
