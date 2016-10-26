@@ -35,15 +35,14 @@ namespace BackboardXamarin
 
 		public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 		{
-			// Use this to return your custom view for this Fragment
-			// return inflater.Inflate(Resource.Layout.YourFragment, container, false);
+            // Use this to return your custom view for this Fragment
+            // return inflater.Inflate(Resource.Layout.YourFragment, container, false);
 
-			//return base.OnCreateView(inflater, container, savedInstanceState);
+            //return base.OnCreateView(inflater, container, savedInstanceState);
+            View rootView = inflater.Inflate(Resource.Layout.origami_example, container, false);
 
-			View rootView = inflater.Inflate(Resource.Layout.origami_example, container, false);
-
-			mPhotoGrid = rootView.FindViewById<View>(Resource.Id.grid);
-			mSelectedPhoto = rootView.FindViewById<View>(Resource.Id.selection);
+            mPhotoGrid = rootView.FindViewById<View>(Resource.Id.grid);
+            mSelectedPhoto = rootView.FindViewById<View>(Resource.Id.selection);
             mFeedbackBar = rootView.FindViewById<View>(Resource.Id.feedback);
 
             SpringSystem springSystem = SpringSystem.Create();
@@ -56,10 +55,10 @@ namespace BackboardXamarin
             mSpring.AddListener(new MapPerformer(mPhotoGrid, ViewHelper.Alpha, 0, 1, 1, 0));
             mSpring.AddListener(new MapPerformer(mPhotoGrid, View.ScaleXs, 0f, 1f, 1f, 0.95f));
             mSpring.AddListener(new MapPerformer(mPhotoGrid, View.ScaleYs, 0f, 1f, 1f, 0.95f));
-			mSpring.AddListener(new MapPerformer(mFeedbackBar, ViewHelper.TranslationY, 0, 1, mFeedbackBar.Height, 0));
+            mSpring.AddListener(new MapPerformer(mFeedbackBar, ViewHelper.TranslationY, 0, 1, mFeedbackBar.Height, 0));
 
-			float barPosition = (float)SpringUtil.MapValueFromRangeToRange(mSpring.CurrentValue, 0, 1, mFeedbackBar.Height, 0);
-			mFeedbackBar.TranslationY = barPosition;
+            float barPosition = (float)SpringUtil.MapValueFromRangeToRange(mSpring.CurrentValue, 0, 1, mFeedbackBar.Height, 0);
+            mFeedbackBar.TranslationY = barPosition;
 
             ToggleImitator imitator = new ToggleImitator(mSpring, 0, 1);
             rootView.SetOnTouchListener(imitator);

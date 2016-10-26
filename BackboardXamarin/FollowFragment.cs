@@ -36,17 +36,15 @@ namespace BackboardXamarin
         {
             // Use this to return your custom view for this Fragment
             // return inflater.Inflate(Resource.Layout.YourFragment, container, false);
-            
+            mRootView = (ViewGroup)inflater.Inflate(Resource.Layout.fragment_follow, container, false);
 
-            mRootView = (ViewGroup) inflater.Inflate(Resource.Layout.fragment_follow, container, false);
-
-		    mCircle = mRootView.FindViewById(Resource.Id.circle);
+            mCircle = mRootView.FindViewById(Resource.Id.circle);
 
             FrameLayout.LayoutParams leaderParams = (FrameLayout.LayoutParams)mCircle.LayoutParameters;
 
             mFollowers = new View[4];
 
-		    float diameter = TypedValue.ApplyDimension(ComplexUnitType.Dip, DIAMETER, Resources.DisplayMetrics);
+            float diameter = TypedValue.ApplyDimension(ComplexUnitType.Dip, DIAMETER, Resources.DisplayMetrics);
 
             Android.Content.Res.TypedArray circles = Resources.ObtainTypedArray(Resource.Array.circles);
 
@@ -57,7 +55,7 @@ namespace BackboardXamarin
                 mFollowers[i] = new View(this.Activity);
 
                 FrameLayout.LayoutParams par = new FrameLayout.LayoutParams((int)diameter, (int)diameter);
-			    par.Gravity = leaderParams.Gravity;
+                par.Gravity = leaderParams.Gravity;
                 mFollowers[i].LayoutParameters = par;
 
                 mFollowers[i].SetBackgroundDrawable(Resources.GetDrawable(circles.GetResourceId(colorIndex, -1)));
@@ -98,7 +96,7 @@ namespace BackboardXamarin
                 //followsX[i] = springSystem.CreateSpring().SetSpringConfig(new SpringConfig(rnd.Next(300), rnd.Next(22)));
                 //followsY[i] = springSystem.CreateSpring().SetSpringConfig(new SpringConfig(rnd.Next(300), rnd.Next(22)));
                 followsX[i].AddListener(new Performer(mFollowers[i], ViewHelper.TranslationX));
-				followsY[i].AddListener(new Performer(mFollowers[i], ViewHelper.TranslationY));
+                followsY[i].AddListener(new Performer(mFollowers[i], ViewHelper.TranslationY));
 
                 // imitates another character
                 SpringImitator followX = new SpringImitator(followsX[i]);
