@@ -55,10 +55,17 @@ namespace BackboardXamarin
             mSpring.AddListener(new MapPerformer(mPhotoGrid, ViewHelper.Alpha, 0, 1, 1, 0));
             mSpring.AddListener(new MapPerformer(mPhotoGrid, View.ScaleXs, 0f, 1f, 1f, 0.95f));
             mSpring.AddListener(new MapPerformer(mPhotoGrid, View.ScaleYs, 0f, 1f, 1f, 0.95f));
-            mSpring.AddListener(new MapPerformer(mFeedbackBar, ViewHelper.TranslationY, 0, 1, mFeedbackBar.Height, 0));
+           
+            EventHandler globalHandler = null;
+            globalHandler += (sender, e) =>
+            {
+                float barPosition = (float)SpringUtil.MapValueFromRangeToRange(mSpring.CurrentValue, 0, 1, mFeedbackBar.Height, 0);
+                mFeedbackBar.TranslationY = barPosition;
+                mSpring.AddListener(new MapPerformer(mFeedbackBar, ViewHelper.TranslationY, 0, 1, mFeedbackBar.Height, 0));
+                rootView.ViewTreeObserver.GlobalLayout -= globalHandler;
+            };
 
-            float barPosition = (float)SpringUtil.MapValueFromRangeToRange(mSpring.CurrentValue, 0, 1, mFeedbackBar.Height, 0);
-            mFeedbackBar.TranslationY = barPosition;
+            rootView.ViewTreeObserver.GlobalLayout += globalHandler;           
 
             ToggleImitator imitator = new ToggleImitator(mSpring, 0, 1);
             rootView.SetOnTouchListener(imitator);
