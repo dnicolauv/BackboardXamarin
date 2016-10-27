@@ -32,7 +32,7 @@ namespace BackboardXamarin
 			// Create your fragment here
 		}
 
-		public class CustomClickListener : AppearFragment, View.IOnClickListener
+		public class CustomClickListener : Java.Lang.Object, View.IOnClickListener
 		{
 			AppearFragment parent;
 			public CustomClickListener(AppearFragment f) : base()

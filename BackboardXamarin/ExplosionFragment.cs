@@ -81,18 +81,11 @@ namespace BackboardXamarin
             return mRootView;
         }
 
-        class CircleSpawn : Java.Lang.IRunnable
+        class CircleSpawn : Java.Lang.Object,  Java.Lang.IRunnable
         {
             ExplosionFragment _fragment;
 
             public CircleSpawn(ExplosionFragment fragment) { _fragment = fragment; }
-            public IntPtr Handle
-            {
-                get
-                {
-                    return new IntPtr();
-                }
-            }
 
             public void Run()
             {
@@ -109,8 +102,7 @@ namespace BackboardXamarin
 
                     Drawable drawable = _fragment.Resources.GetDrawable(_fragment.mCircles.GetResourceId(_fragment.colorIndex, -1));
 
-                    createCircle(_fragment.Activity, _fragment.mRootView, _fragment.mSpringSystem, _fragment.mCoasting, _fragment.mGravity,
-                            (int)diameter, drawable);
+                    createCircle(_fragment.Activity, _fragment.mRootView, _fragment.mSpringSystem, _fragment.mCoasting, _fragment.mGravity, (int)diameter, drawable);
 
                     _fragment.mHandler.PostDelayed(this, 100);
                 }
@@ -128,13 +120,13 @@ namespace BackboardXamarin
                 RelativeLayout.LayoutParams paramss = new RelativeLayout.LayoutParams(diameter, diameter);
                 paramss.AddRule(LayoutRules.CenterInParent);
                 view.LayoutParameters = paramss;
-                view.SetBackgroundDrawable(backgroundDrawable);
+                view.Background = backgroundDrawable;
 
                 rootView.AddView(view);
 
                 // generate random direction and magnitude
-                double magnitude = new Random().Next() * 1000 + 3000;
-                double angle = new Random().Next() * System.Math.PI / 2 + System.Math.PI / 4;
+                double magnitude = new Random().NextDouble() * 1000 + 3000;
+                double angle = new Random().NextDouble() * System.Math.PI / 2 + System.Math.PI / 4;
 
                 xSpring.SetVelocity(magnitude * System.Math.Cos(angle));
                 ySpring.SetVelocity(-magnitude * System.Math.Sin(angle));
@@ -152,10 +144,6 @@ namespace BackboardXamarin
                 xSpring.SetEndValue(2);
                 ySpring.SetEndValue(9001);
             }
-
-            public void Dispose()
-            {
-            }
         }
 
         /**
@@ -167,14 +155,6 @@ namespace BackboardXamarin
 
             protected ViewGroup mViewGroup;
             protected View mViewToRemove;
-
-            public IntPtr Handle
-            {
-                get
-                {
-                    return new IntPtr();///throw new NotImplementedException();
-                }
-            }
 
             public Destroyer(ViewGroup viewGroup, View viewToRemove, int min, int max)
             {
@@ -192,7 +172,7 @@ namespace BackboardXamarin
                 return spring.CurrentValue < mMin || spring.CurrentValue > mMax;
             }
 
-            public void clean(Spring spring)
+            public void Clean(Spring spring)
             {
                 if (mViewGroup != null && mViewToRemove != null)
                 {
@@ -207,7 +187,7 @@ namespace BackboardXamarin
             {
                 if (ShouldClean(spring))
                 {
-                    clean(spring);
+                    Clean(spring);
                 }
             }
 
@@ -219,11 +199,6 @@ namespace BackboardXamarin
             }
             public void OnSpringEndStateChange(Spring spring)
             {
-            }
-
-            public void Dispose()
-            {
-                //throw new NotImplementedException();
             }
         }
     }

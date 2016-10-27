@@ -60,7 +60,6 @@ namespace BackboardXamarin
 		//DNV REVIEW
 		public class SnapImitator : MotionImitator
 		{
-
 			public SnapImitator(MotionProperty property) : base(property, 0, Imitator.TRACK_ABSOLUTE, Imitator.FOLLOW_SPRING)
 			{
 				//super(property, 0, Imitator.TRACK_ABSOLUTE, Imitator.FOLLOW_SPRING);
