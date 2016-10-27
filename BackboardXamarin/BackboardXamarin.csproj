@@ -60,6 +60,7 @@
     <Compile Include="FlowerFragment.cs" />
     <Compile Include="AppearFragment.cs" />
     <Compile Include="ConstrainedFragment.cs" />
+    <Compile Include="ZoomFragment.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

@@ -106,29 +106,29 @@ namespace BackboardXamarin
                     return true;
                
 
-            case Resource.Id.action_explosion:
-                FragmentManager.BeginTransaction()
-                        .Replace(Resource.Id.container, new ExplosionFragment())
-                        .Commit();
-                SetTitle(Resource.String.action_explosion);
-                return true;
+                case Resource.Id.action_explosion:
+                    FragmentManager.BeginTransaction()
+                            .Replace(Resource.Id.container, new ExplosionFragment())
+                            .Commit();
+                    SetTitle(Resource.String.action_explosion);
+                    return true;
 
+                
+
+                        case Resource.Id.action_zoom:
+                            FragmentManager.BeginTransaction()
+                                    .Replace(Resource.Id.container, new ZoomFragment())
+                                    .Commit();
+                            SetTitle(Resource.String.action_zoom);
+                            return true;
                 /*
-
-                           case Resource.Id.action_zoom:
-                               FragmentManager.BeginTransaction()
-                                       .Replace(Resource.Id.container, new ZoomFragment())
-                                       .Commit();
-                               SetTitle(Resource.String.action_zoom);
-                               return true;
-
-                           case Resource.Id.action_press:
-                               FragmentManager.BeginTransaction()
-                                       .Replace(Resource.Id.container, new PressFragment())
-                                       .Commit();
-                               SetTitle(Resource.String.action_press);
-                               return true;
-                               */
+                       case Resource.Id.action_press:
+                           FragmentManager.BeginTransaction()
+                                   .Replace(Resource.Id.container, new PressFragment())
+                                   .Commit();
+                           SetTitle(Resource.String.action_press);
+                           return true;
+                           */
 
                 //REBOUND EXAMPLES
 
