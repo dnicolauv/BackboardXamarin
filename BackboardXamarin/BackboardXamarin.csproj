@@ -51,6 +51,7 @@
     <Compile Include="ExplosionFragment.cs" />
     <Compile Include="FollowFragment.cs" />
     <Compile Include="OrigamiFragment.cs" />
+    <Compile Include="PressFragment.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MoveFragment.cs" />
