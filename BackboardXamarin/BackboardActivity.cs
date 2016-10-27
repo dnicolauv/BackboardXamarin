@@ -122,13 +122,6 @@ namespace BackboardXamarin
                 SetTitle(Resource.String.action_zoom);
                 return true;
 
-            case Resource.Id.action_constrained:
-                FragmentManager.BeginTransaction()
-                        .Replace(R.Id.container, new ConstrainedFragment())
-                        .Commit();
-                SetTitle(Resource.String.action_constrained);
-                return true;
-
             case Resource.Id.action_press:
                 FragmentManager.BeginTransaction()
                         .Replace(Resource.Id.container, new PressFragment())
@@ -136,6 +129,8 @@ namespace BackboardXamarin
                 SetTitle(Resource.String.action_press);
                 return true;
                 */
+
+                //REBOUND EXAMPLES
 
                 case Resource.Id.action_origami:
 					FragmentManager.BeginTransaction()

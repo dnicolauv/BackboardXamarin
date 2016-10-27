@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BackboardActivity.cs" />
+    <Compile Include="ExplosionFragment.cs" />
     <Compile Include="FollowFragment.cs" />
     <Compile Include="OrigamiFragment.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
